@@ -11,13 +11,10 @@ import com.example.coderswagapp.Model.Category
 import com.example.coderswagapp.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-class CategoryAdapter(context:Context, categories:List<Category>):BaseAdapter(){
-
-    val context = context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>):BaseAdapter(){
 
 
- override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
 
      val categoryView: View
      val holder: ViewHolder
